@@ -139,46 +139,92 @@ body {
 .home {
   width: 800px;
   margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
 }
-header {
+.home header {
   height: 50px;
 }
-header nav {
+.home header nav {
   text-align: end;
 }
-header a {
+.home header a {
   text-decoration: none;
   color: black;
   padding: 0 10px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
-.top-content-container {
+.home .top-content-container {
   background: lightgrey;
   height: 500PX;
+  margin-bottom: 20px;
 }
-.top-content-container .top-content {
+.home .top-content-container .top-content {
   padding: 20px;
 }
-.top-content-container .top-content h1 {
+.home .top-content-container .top-content h1 {
   font-size: 4rem;
 }
-.top-content-container .top-content p {
-  font-size: 1.5rem;
+.home .top-content-container .top-content p {
+  font-size: 1.7rem;
   padding-top: 5px;
 }
-.top-content-container .top-content .team-up {
+.home .top-content-container .top-content .team-up {
   margin-top: 20px;
 }
-.top-content-container .top-content .team-up p {
+.home .top-content-container .top-content .team-up p {
   padding: 20px 0;
   line-height: 20px;
 }
-.top-content-container .top-content .team-up button {
+.home .top-content-container .top-content .team-up button {
   height: 30px;
   background: grey;
   font-size: 2rem;
 }
-.top-content-container img {
+.home .top-content-container img {
   height: 250px;
   width: 250px;
+}
+.home .bottom-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+.home .bottom-content-container .bottom-content {
+  width: 45%;
+}
+.home .bottom-content-container .bottom-content h2 {
+  font-size: 3rem;
+  padding-bottom: 5px;
+}
+.home .bottom-content-container .bottom-content p {
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+.home .bottom-content-container .bottom-content li {
+  font-size: 1.4rem;
+  padding: 8px 4px;
+  border: 1px solid lightgrey;
+}
+.home .work-history {
+  margin: 30px 0;
+}
+.home .work-history table {
+  height: 150px;
+}
+.home .work-history table .table-item {
+  text-align: center;
+}
+.home .work-history h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.home .work-history th {
+  font-size: 1.5rem;
+}
+.home .work-history td {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+.home .work-history tr:nth-child(even) {
+  background-color: lightgrey;
 }
