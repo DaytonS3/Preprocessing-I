@@ -49,6 +49,25 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+//variables
+@maincolor: lightgrey;
+
+//mixins
+
+.border{
+	border: 1px solid black;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+//code
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -62,7 +81,7 @@ html, body {
 .home {
 	width: 800px;
 	margin: 0 auto;
-	border: 1px solid black;
+	.border();
 	padding: 20px;
 
 	header {
@@ -81,7 +100,7 @@ html, body {
  }
 
 	.top-content-container{
-	background: lightgrey;
+	background: @maincolor;
 	height: 500PX;
 	margin-bottom: 20px;
 
@@ -122,8 +141,7 @@ html, body {
 
 
 	.bottom-content-container{
-	display: flex;
-	justify-content: space-between;
+		.flex();
 
 	.bottom-content{
 		width: 45%;	
@@ -141,7 +159,7 @@ html, body {
 		li {
 			font-size: 1.4rem;
 			padding: 8px 4px;
-			border: 1px solid lightgrey;
+			border: 1px solid @maincolor;
 		}
 	}
  }
@@ -173,7 +191,7 @@ html, body {
 		}
 
 		tr:nth-child(even) {
-			background-color: lightgrey;
+			background-color: @maincolor;
 		  }
 	 }
 
