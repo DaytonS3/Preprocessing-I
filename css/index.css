@@ -139,6 +139,17 @@ body {
   width: 800px;
   margin: 0 auto;
 }
+header {
+  height: 50px;
+}
+header nav {
+  text-align: end;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
 .top-content-container {
   background: lightgrey;
   height: 500PX;
