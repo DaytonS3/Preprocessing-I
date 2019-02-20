@@ -144,10 +144,10 @@ body {
   font-size: 62.5%;
 }
 .home {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid black;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 .home header {
   height: 50px;
@@ -155,14 +155,22 @@ body {
 .home header nav {
   text-align: end;
 }
+@media (max-width: 500px) {
+  .home header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home header a {
   text-decoration: none;
   color: black;
   padding: 0 10px;
   font-size: 1.7rem;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 .home .top-content-container {
-  background: lightgrey;
+  background: #dbecfa;
   height: 500PX;
   margin-bottom: 20px;
 }
@@ -171,6 +179,7 @@ body {
 }
 .home .top-content-container .top-content h1 {
   font-size: 4rem;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 .home .top-content-container .top-content p {
   font-size: 1.7rem;
@@ -183,10 +192,18 @@ body {
   padding: 20px 0;
   line-height: 20px;
 }
-.home .top-content-container .top-content .team-up button {
-  height: 30px;
-  background: grey;
+.home .top-content-container .top-content .team-up .btn {
+  border: 1px solid black;
   font-size: 2rem;
+  text-decoration: none;
+  background: grey;
+  border-radius: 5%;
+  color: #dbecfa;
+}
+@media (max-width: 800px) {
+  .home .top-content-container .top-content .team-up .btn {
+    display: none;
+  }
 }
 .home .top-content-container img {
   height: 250px;
@@ -202,6 +219,7 @@ body {
 .home .bottom-content-container .bottom-content h2 {
   font-size: 3rem;
   padding-bottom: 5px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 .home .bottom-content-container .bottom-content p {
   font-size: 1.4rem;
@@ -210,7 +228,7 @@ body {
 .home .bottom-content-container .bottom-content li {
   font-size: 1.4rem;
   padding: 8px 4px;
-  border: 1px solid lightgrey;
+  border: 1px solid #dbecfa;
 }
 .home .work-history {
   margin: 30px 0;
@@ -224,6 +242,7 @@ body {
 .home .work-history h2 {
   font-size: 3rem;
   margin-bottom: 10px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 .home .work-history th {
   font-size: 1.5rem;
@@ -233,5 +252,21 @@ body {
   margin-left: 20px;
 }
 .home .work-history tr:nth-child(even) {
-  background-color: lightgrey;
+  background-color: #dbecfa;
+}
+.home footer {
+  background: grey;
+  height: 50px;
+  text-align: center;
+}
+.home footer p {
+  font-size: 1rem;
+  padding-top: 8px;
+  color: white;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.home footer h3 {
+  font-size: 2rem;
+  color: #dbecfa;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }

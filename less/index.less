@@ -51,7 +51,8 @@ table {
 /* Set every element's box-sizing to border-box */
 
 //variables
-@maincolor: lightgrey;
+@maincolor: rgb(219, 236, 250);
+@accentcolor: grey;
 
 //mixins
 
@@ -79,16 +80,23 @@ html, body {
 }
 
 .home {
-	width: 800px;
+	width: 100%;
 	margin: 0 auto;
 	.border();
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 
 	header {
 	height: 50px;
 
+
 	nav{
 		text-align: end;
+
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	a {
@@ -96,6 +104,7 @@ html, body {
 		color: black;
 		padding: 0 10px;
 		font-size: 1.7rem;
+		font-family: 'ZCOOL QingKe HuangYou', cursive;
 	}
  }
 
@@ -109,6 +118,7 @@ html, body {
 
 		h1 {
 			font-size: 4rem;
+			font-family: 'ZCOOL QingKe HuangYou', cursive;
 		}
 
 		p {
@@ -125,11 +135,20 @@ html, body {
 				line-height: 20px;
 			}
 
-			button {
-				height: 30px;
-				background: grey;
+			.btn {
+				.border();
 				font-size: 2rem;
+				text-decoration: none;
+				background: grey;
+				border-radius: 5%;
+				color: @maincolor;
+
+				@media(max-width: 800px){
+					display: none;
+				}
 			}
+			
+			
 		}
 	}
 
@@ -149,6 +168,7 @@ html, body {
 		h2{
 			font-size: 3rem;
 			padding-bottom: 5px;
+			font-family: 'ZCOOL QingKe HuangYou', cursive;
 		}
 
 		p {
@@ -179,6 +199,7 @@ html, body {
 		h2 {
 			font-size: 3rem;
 			margin-bottom: 10px;
+			font-family: 'ZCOOL QingKe HuangYou', cursive;
 		}
 
 		th {
@@ -195,7 +216,26 @@ html, body {
 		  }
 	 }
 
+	 footer{
+		 background: @accentcolor;
+		 height: 50px;
+		 text-align: center;
+		
 
+		 p {
+			 font-size: 1rem;
+			 padding-top: 8px; 
+			 color: white;
+			 font-family: 'ZCOOL QingKe HuangYou', cursive;
+		 }
+
+		 h3 {
+			 font-size: 2rem;
+			 color:@maincolor;
+			 font-family: 'ZCOOL QingKe HuangYou', cursive;
+		 }
+
+	 }
 
 
 }
