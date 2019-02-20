@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   padding: 20px;
+  font-size: 62.5%;
 }
 .home {
   width: 800px;
@@ -149,6 +150,7 @@ header a {
   text-decoration: none;
   color: black;
   padding: 0 10px;
+  font-size: 1.5rem;
 }
 .top-content-container {
   background: lightgrey;
@@ -156,6 +158,25 @@ header a {
 }
 .top-content-container .top-content {
   padding: 20px;
+}
+.top-content-container .top-content h1 {
+  font-size: 4rem;
+}
+.top-content-container .top-content p {
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.top-content-container .top-content .team-up {
+  margin-top: 20px;
+}
+.top-content-container .top-content .team-up p {
+  padding: 20px 0;
+  line-height: 20px;
+}
+.top-content-container .top-content .team-up button {
+  height: 30px;
+  background: grey;
+  font-size: 2rem;
 }
 .top-content-container img {
   height: 250px;
