@@ -119,6 +119,10 @@ html, body {
 		h1 {
 			font-size: 4rem;
 			font-family: 'ZCOOL QingKe HuangYou', cursive;
+
+			@media(max-width: 500px){
+				font-size: 2rem;
+			}
 		}
 
 		p {
@@ -162,8 +166,19 @@ html, body {
 	.bottom-content-container{
 		.flex();
 
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+		}
+
 	.bottom-content{
 		width: 45%;	
+
+		@media(max-width: 500px){
+			width: 100%;
+
+	    }
+
 
 		h2{
 			font-size: 3rem;

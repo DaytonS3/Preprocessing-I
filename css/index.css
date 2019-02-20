@@ -181,6 +181,11 @@ body {
   font-size: 4rem;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
+@media (max-width: 500px) {
+  .home .top-content-container .top-content h1 {
+    font-size: 2rem;
+  }
+}
 .home .top-content-container .top-content p {
   font-size: 1.7rem;
   padding-top: 5px;
@@ -213,8 +218,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .bottom-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .bottom-content-container .bottom-content {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .home .bottom-content-container .bottom-content {
+    width: 100%;
+  }
 }
 .home .bottom-content-container .bottom-content h2 {
   font-size: 3rem;
